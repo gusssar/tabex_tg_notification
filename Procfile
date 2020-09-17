@@ -1,1 +1,2 @@
-worker: node biuld/index.js
+web: yarn start
+worker: yarn start
