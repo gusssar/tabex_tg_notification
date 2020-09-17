@@ -2,9 +2,10 @@
   "name": "tabex_tg_notification",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "yarn tsc; node build/index.js",
+    "build-start": "rm -rf build; yarn tsc; node build/index.js"
   },
   "engines": {
     "node": "12.13.1"
@@ -23,6 +24,10 @@
   },
   "homepage": "https://github.com/gusssar/tabex_tg_notification#readme",
   "dependencies": {
-    "node-telegram-bot-api": "^0.50.0"
+    "node-telegram-bot-api": "^0.50.0",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.50.3"
   }
 }

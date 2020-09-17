@@ -1,1 +1,2 @@
-web: node index.js
+web: node biuld/index.js
+worker: node biuld/index.js
